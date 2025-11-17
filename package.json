@@ -1,13 +1,13 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "raycast-search-cosense",
-  "title": "Search Cosense",
-  "description": "",
-  "icon": "extension-icon.png",
+  "name": "raycast-cosense",
+  "title": "Cosense Utils",
+  "description": "Cosense Utils for Raycast.",
+  "icon": "icon.png",
   "author": "ywada526",
   "platforms": [
     "macOS",
-    "Windows"
+    "windows"
   ],
   "categories": [
     "Productivity"
@@ -17,11 +17,22 @@
     {
       "name": "search-cosense",
       "title": "Search Cosense",
-      "description": "",
-      "mode": "no-view"
+      "description": "Search pages in your Cosense project.",
+      "mode": "view",
+      "preferences": [
+        {
+          "name": "projectName",
+          "type": "textfield",
+          "title": "Cosense Project Name",
+          "placeholder": "your-project-name",
+          "description": "Cosense project name",
+          "required": true
+        }
+      ]
     }
   ],
   "dependencies": {
+    "@progfay/scrapbox-parser": "10.0.2",
     "@raycast/api": "^1.103.6",
     "@raycast/utils": "^1.17.0"
   },
