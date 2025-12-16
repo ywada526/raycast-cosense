@@ -29,12 +29,29 @@
           "required": true
         }
       ]
+    },
+    {
+      "name": "create-cosense-book-page-from-amazon-link",
+      "title": "Create Cosense Book Page from Amazon Link",
+      "description": "Create a Cosense page from an Amazon product link in your clipboard.",
+      "mode": "no-view",
+      "preferences": [
+        {
+          "name": "projectName",
+          "type": "textfield",
+          "title": "Cosense Project Name",
+          "placeholder": "your-project-name",
+          "description": "Cosense project name",
+          "required": true
+        }
+      ]
     }
   ],
   "dependencies": {
     "@progfay/scrapbox-parser": "10.0.2",
     "@raycast/api": "^1.103.6",
-    "@raycast/utils": "^1.17.0"
+    "@raycast/utils": "^1.17.0",
+    "node-html-parser": "7.0.1"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^2.0.4",
